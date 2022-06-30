@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="assets/favicon.ico" rel="shortcut icon" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>momentum</title>
+</head>
+
+<body>
+    <header class="header">
+        <!-- <button class="open-player" title="open-list"></button> -->
+        <div class="player">
+            <audio class="audio" src="./assets/sounds/Aqua Caelestis.mp3"></audio>
+            <div class="player-controls">
+                <div class="player-container player-controls__btns">
+                    <button class="play-prev player-icon"></button>
+                    <button class="play player-icon"></button>
+                    <button class="play-next player-icon"></button>
+                </div>
+                <div class="progress-container">
+                    <input class="progress range" type="range" name="progress" min="0" max="100" value="0" step="0.1">
+                    <p class="duration">00:00/00:00</p>
+                </div>
+                <button class="player-icon play-list-btn"></button>
+
+                <div class="player-container volume-container ">
+                    <button class="player-icon mute-btn"></button>
+                    <input class="volume range" type="range" name="volume" min="0" max="100" value="50" step="1">
+                </div>
+
+            </div>
+
+            <ul class="play-list"></ul>
+        </div>
+        <div class="weather">
+            <input type="text" class="city" placeholder="[Enter]" />
+            <p class="weather-item weather-error"></p>
+            <div class="description-container">
+                <i class="weather-icon owf"></i>
+                <p class="temperature"></p>
+            </div>
+            <p class="weather-item weather-description"></p>
+            <p class="weather-item wind"></p>
+            <p class="weather-item humidity"></p>
+        </div>
+    </header>
+    <main class="main">
+        <div class="slider-icons">
+            <button class="slide-prev slider-icon"></button>
+            <button class="slide-next slider-icon"></button>
+        </div>
+        <p class="time"></p>
+        <p class="date"></p>
+        <div class="greeting-container">
+            <p class="greeting"></p>
+            <input class="name" type="text" />
+        </div>
+    </main>
+    <footer class="footer">
+        <button class="settings"></button>
+        <button class="change-quote"></button>
+        <div>
+            <p class="quote"></p>
+            <p class="author"></p>
+        </div>
+    </footer>
+</body>
+
+</html>
